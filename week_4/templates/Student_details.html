@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Course Details </title>
+</head>
+<body>
+	<div><H1>Student Details</H1></div>
+	<div>
+	<table border = "2" id = "course-details-table">
+		<thead>
+			<tr>
+				<th>Student id</th>
+				<th>Course id</th>
+				<th>Marks</th>
+			</tr>
+		</thead>
+		{% for d in data%}
+		<tr>
+			<td> {{d["student_id"]}} </td>
+			<td> {{d["course_id"]}} </td>
+			<td> {{d["marks"]}} </td>
+		</tr>
+		{% endfor %}
+		<tr>
+			<td id="last_row" colspan="2" align="center">Total Marks</td>
+            	<td>{{total}}</td>
+		</tr>
+	</table>
+	</div>
+	<br>
+	<br>
+	<div><a href="/"> Go Back</a></div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body{
+	background-color:#fdfdbb;
+}
+div{
+	margin:20px;
+}
+th{
+	background-color:#259e3f;
+	padding:5px;
+}
+H5{
+	position:fixed;
+	width:100%;
+	bottom:0px;
+	text-align:center;
+}
+td{
+	background-color:black;
+	text-align:right;
+	color:white;
+	padding:5px;
+}
+table{
+	background-color:black;
+	width:12%;
+}
+a{
+	color:red;
+}
+span{
+	color:blue;
+}

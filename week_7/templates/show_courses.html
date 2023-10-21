@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2><span style="float:center">Course Details</span></h2>
+<table id = "course-detail">
+    <tr>
+        <th>S. No.</th>
+        <th>Course Code</th>
+        <th>Course Name</th>
+        <th>Course Description</th>
+    </tr>
+    <tr>
+        <td>{{ curs["course_id"] }}</td>
+        <td>{{ curs["course_code"] }}</td>
+        <td>{{ curs["course_name"] }}</td>
+        <td>{{ curs["course_description"] }}</td>
+    </tr>
+</table>
+<h2><span style="float:right">Enrollment list</span></h2>
+<table id = "course-table">
+    <tr>
+        <th>Roll Number</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+    {% for stud in curs.students %}
+    <tr>
+        <td>{{ stud["roll_number"] }}</td>
+        <td>{{ stud["first_name"] }}</td>
+        <td>{{ stud["last_name"] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="/" type="button">Go Back</a>
+</body>
+</html>
